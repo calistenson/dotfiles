@@ -15,7 +15,6 @@ ZSH_THEME="avit"
 #bash things
 export EDITOR=emacs
 export DEVSTACK_WORKSPACE=/Users/cstenson/code
-export OPTIMIZELY_TOKEN=2:5ZZMOVKJ5Y6fTc0R0G4WcMTOD64zWcznsg3mOYoNBUMNq8MYQQu4
 
 export PATH="/Users/cstenson/anaconda3/bin:$PATH"
 
@@ -160,4 +159,10 @@ for module in ~/dotfiles/zsh/*; do
 	source $module; 
 	echo $module;
 done
+
+#secrets
+#Secrets
+if [ -f $HOME/.secrets ]; then
+   source $HOME/.secrets;
+fi
 
